@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --DARK-CYAN-BLUE: #027f8d;
+    --CYAN: #00A3B5;
+    --LIGHT-BLUE: #30c2c7;
+    --DARK-RED: #692C00;
+    --RED: #B54B00;
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+}
+.container{
+    background-color: var(--LIGHT-BLUE);
+    width: 100vw;
+    height: 8vh;
+    padding-top: 25px;
+}
+.nav-menu li > a{
+    text-decoration: none;
+    color: white;
+    margin-left: 5vw;
+    font-size: 20px;
+    -webkit-transition: padding 1s;
+}
+.nav-menu li > a:hover{
+    background-color: #12d3da;
+    border-radius: 10px;
+    transition: all ease-in-out 0.5s;
+    padding: 5px 20px 5px 20px;
+    cursor: pointer;
+}
+.nav-menu li{
+    list-style: none;
+}
+.left{
+    background-color: var(--LIGHT-BLUE);
+    width: 30vw;
+}
+.gg-instagram {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1.8));
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+    color: white;
+    right: -80%;
+    bottom: 5vh;
+    margin-left: -30px;
+}
+.gg-instagram::after,
+.gg-instagram::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+}
+.gg-instagram::after {
+    border: 2px solid;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    top: 3px
+}
+.gg-instagram::before {
+    border-radius: 3px;
+    width: 2px;
+    height: 2px;
+    background: currentColor;
+    right: 1px;
+    top: 1px
+}
+.gg-facebook {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,2));
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    color: var(--LIGHT-BLUE);
+    right: -84%;
+    bottom: 7vh;
+    margin-left: -15px;
+}
+.gg-facebook::after,
+.gg-facebook::before {
+    content: "";
+    display: block;
+    position: absolute;
+    box-sizing: border-box
+}
+.gg-facebook::before {
+    width: 8px;
+    height: 20px;
+    border-left: 4px solid;
+    border-top: 4px solid;
+    border-top-left-radius: 5px;
+    left: 6px
+}
+.gg-facebook::after {
+    width: 10px;
+    height: 4px;
+    background: currentColor;
+    top: 7px;
+    left: 4px;
+    transform: skew(-5deg)
+}
+.gg-search {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,2));
+    width: 16px;
+    height: 16px;
+    border: 2px solid;
+    border-radius: 100%;
+    margin-left: -4px;
+    margin-top: -4px;
+    right: -88%;
+    bottom: 8.8vh;
+    color: white;
+}
+.gg-search::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 3px;
+    width: 2px;
+    height: 8px;
+    background: currentColor;
+    transform: rotate(-45deg);
+    top: 10px;
+    left: 12px
+}
+.logo{
+    border-radius: 50%;
+    height: 80px;
+    margin-left: 5vw;
+    margin-top: 3vh;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 20px;
+}
+#atendimento{
+    color: var(--DARK-CYAN-BLUE);
+    font-weight: bold;
+}
+.contato-pos{
+    margin-top: -14vh;
+    padding-left: 10%;
+}
+#contato{
+    font-weight: bold;
+    color: var(--DARK-CYAN-BLUE);
+}
+#msg{
+    font-weight: bold;
+    color: var(--DARK-CYAN-BLUE);
+    padding-left: 13vw;
+}
+#mensagem{
+    padding-top: 40px;
+    padding-left: 11vw;
+}
+#contact{
+    padding-top: 20px;
+}
+#dr{
+    color: var(--CYAN);
+    font-weight: bold;
+    font-size: 15px;
+    padding-left: 40px;
+}
+#drp{
+    font-weight: 300;
+    font-size: 10px;
+    padding-left: 90px;
+    padding-bottom: 20px;
+}
+.gg-time {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1.2));
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px currentColor;
+    left: -28px;
+    top: 20px;
+    color: var(--DARK-CYAN-BLUE);
+}
+.gg-time::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    top: 1px;
+    left: 5px
+}
+.gg-phone {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 22px;
+    height: 22px;
+    transform: scale(var(--ggs,1));
+    color: var(--DARK-CYAN-BLUE);
+    left: -40px;
+    top: 26px;
+ }
+ .gg-phone::after,
+ .gg-phone::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+ }
+ .gg-phone::after {
+    width: 18px;
+    height: 18px;
+    border-top-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    border-bottom-left-radius: 12px;
+    border-left: 4px solid;
+    border-bottom: 4px solid;
+    left: 2px;
+    bottom: 2px;
+    background:
+       linear-gradient(
+          to left,
+          currentColor 10px,
+          transparent 0
+       ) no-repeat right 11px/6px 4px,
+       linear-gradient(
+          to left,
+          currentColor 10px,
+          transparent 0
+       ) no-repeat -1px 0/4px 6px
+ }
+ .gg-phone::before {
+    width: 20px;
+    height: 20px;
+    border: 6px double;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+    bottom: 2px;
+    left: 2px
+ }
