@@ -37,7 +37,6 @@ body{
     padding-top: 1.4vh;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.24);
     margin-top: 2vh;
-
 }
 .nav-menu li > a{
     position: relative;
@@ -230,6 +229,7 @@ body{
  }
 #petimg{
     position: relative;
+    margin-top: 3.5vh;
 }
 .pet{
     position: absolute;
@@ -693,4 +693,40 @@ li {
     width: 10vw;
     position: absolute;
     bottom: 25%;
+}
+.separacao-footer a{
+    text-decoration: none;
+    color: white;
+}
+.right{
+    list-style: none;
+}
+.icons{
+    position: absolute;
+    left: 80%;
+}
+#instagram{
+    left: -40%;
+    transition: all .5s;
+}
+#instagram:hover{
+    background-color: #00999e;
+    padding: 0.6vw;
+    border-radius: 1vw;
+}
+#facebook{
+    left: 2vw;
+    transition: all .5s;
+}
+#facebook:hover{
+    background-color: #00999e;
+    padding: 0.6vw;
+    border-radius: 1vw;
+}
+.opacity{
+    opacity: 0;
+    transition: .5s;
+}
+.common{
+    padding-top: 7vh;
 }

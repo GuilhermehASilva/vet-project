@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+:root{
+    --DARK-CYAN-BLUE: #027f8d;
+    --CYAN: #00A3B5;
+    --LIGHT-BLUE: #30c2c7;
+    --DARK-RED: #692C00;
+    --RED: #B54B00;
+}
+::-webkit-scrollbar{
+    background-color: var(--RED);
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--LIGHT-BLUE);
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 9.6vw;
+}
+.container{
+    position: relative;
+    background-color: var(--LIGHT-BLUE);
+    width: 100vw;
+    height: 6.5vh;
+    padding-top: 1.4vh;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.24);
+    margin-top: 2vh;
+}
+.nav-menu li > a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    margin-left: 5vw;
+    font-size: 1vw;
+    -webkit-transition: .5s;
+    top: -1.5vh;
+}
+.nav-menu li > a:hover{
+    background-color: #00999e;
+    border-radius: 15px;
+    transition: all ease 0.4s;
+    padding: 8px 20px 8px 20px;
+    cursor: pointer;
+}
+.nav-menu li{
+    list-style: none;
+}
+.left{
+    background-color: var(--LIGHT-BLUE);
+    width: 30vw;
+}
+.logo{
+    border-radius: 20px 80px 60px;
+    height: 100px;
+    margin-left: 5vw;
+    margin-top: 3vh;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.336);
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 20px;
+    padding-left: 20vw;
+    margin-top: -2vh;
+}
+.doutor{
+    padding-left: 12vw;
+}
+#atendimento{
+    position: absolute;
+    color: var(--DARK-CYAN-BLUE);
+    font-weight: bold;
+    font-size: 0.9vw;
+    top: 12vh;
+    left: 39%;
+}
+.contato-pos{
+    position: absolute;
+    margin-top: -12vh;
+    left: 38.6vw;
+}
+#contato{
+    position: relative;
+    font-weight: bold;
+    color: var(--DARK-CYAN-BLUE);
+    padding-top: 0.2vh;
+    font-size: 0.9vw;
+    right: -39.8vw;
+    top: 5vh;
+}
+#clock{
+    position: relative;
+    left: -3vw;
+}
+#msg{
+    position: absolute;
+    font-weight: bold;
+    color: var(--DARK-CYAN-BLUE);
+    font-size: 0.9vw;
+    right: 32.7%;
+    top: 11.8vh;
+    padding-top: 1vh;
+}
+#mensagem{
+    position: absolute;
+    padding-top: 1.3vh;
+    left: 58%;
+}
+#contact{
+    position: absolute;
+    margin-top: -6px;
+    right: -40vw;
+}
+#dr{
+    color: var(--CYAN);
+    font-weight: bold;
+    font-size: 15px;
+    padding-left: 2.8vw;
+}
+#drp{
+    font-weight: 300;
+    font-size: 13px;
+    padding-left: 4.4vw;
+    padding-bottom: 1vw;
+}
+.gg-time {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1.2));
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px currentColor;
+    left: -28px;
+    top: 20px;
+    color: var(--DARK-CYAN-BLUE);
+}
+.gg-time::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    top: 1px;
+    left: 5px
+}
+.gg-phone {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 22px;
+    height: 22px;
+    transform: scale(var(--ggs,1));
+    color: var(--DARK-CYAN-BLUE);
+    left: -40px;
+    top: 26px;
+ }
+ .gg-phone::after,
+ .gg-phone::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+ }
+ .gg-phone::after {
+    width: 18px;
+    height: 18px;
+    border-top-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    border-bottom-left-radius: 12px;
+    border-left: 4px solid;
+    border-bottom: 4px solid;
+    left: 2px;
+    bottom: 2px;
+    background:
+       linear-gradient(
+          to left,
+          currentColor 10px,
+          transparent 0
+       ) no-repeat right 11px/6px 4px,
+       linear-gradient(
+          to left,
+          currentColor 10px,
+          transparent 0
+       ) no-repeat -1px 0/4px 6px
+ }
+ .gg-phone::before {
+    width: 20px;
+    height: 20px;
+    border: 6px double;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+    bottom: 2px;
+    left: 2px
+ }
+ section{
+    padding-left: 14.5vw;
+ }
+ section h1{
+    color: var(--CYAN);
+    padding-top: 1vh;
+    font-size: 60px;
+    padding-bottom: 1vh;
+ }
+ .services-menu a{
+    text-decoration: none;
+    color: black;
+    padding-left: 1vw;
+    padding-top: 2vh;
+    transition: all .3s;
+    padding-bottom: 1vh;
+    letter-spacing: 2px;
+}
+.services-menu{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 31%;
+    top: 26%;
+    background-color: rgb(233, 233, 233);
+    width: 9vw;
+    height: 28vh;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.582);
+    border-radius: 3px;
+    transition: all .2s
+}
+.services-menu a:hover{
+    background-color: rgb(201, 201, 201);
+}
+.hidden{ 
+    font-size: 0vh;
+    width: 0vw;
+    height: 0vh;
+}
+.right{
+    list-style: none;
+}
+.icons{
+    position: absolute;
+    left: 80%;
+}
+#instagram{
+    left: -40%;
+    transition: all .5s;
+}
+#instagram:hover{
+    background-color: #00999e;
+    padding: 0.6vw;
+    border-radius: 1vw;
+}
+#facebook{
+    left: 2vw;
+    transition: all .5s;
+}
+#facebook:hover{
+    background-color: #00999e;
+    padding: 0.6vw;
+    border-radius: 1vw;
+}
+.opacity{
+    opacity: 0;
+    transition: .5s;
+}
